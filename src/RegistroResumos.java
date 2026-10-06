@@ -23,9 +23,12 @@ public class RegistroResumos {
 
     private boolean checaTema(String tema) {
         for (int i = 0; i < this.temas.length; i++) {
-            if (this.temas[i].equals(tema)) {
-                return true;
+            if (temas[i] == null) {
+                return false;
             }
+            else if (this.temas[i].equals(tema)) {
+                    return true;
+                }
         }
         return false;
     }
