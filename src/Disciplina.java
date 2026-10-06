@@ -1,5 +1,3 @@
-package lab02;
-
 import java.util.Arrays;
 
 public class Disciplina {
@@ -31,11 +29,7 @@ public class Disciplina {
 
     public boolean aprovado() {
         double media = calculaMedia();
-        if (media >= 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return media >= 7;
     }
 
     @Override

@@ -1,5 +1,3 @@
-package lab02;
-
 public class RegistroTempoOnline {
     private String nomeDisciplina;
     private int tempoOnlineInvestido;
@@ -22,11 +20,7 @@ public class RegistroTempoOnline {
     }
 
     public boolean atingiuMetaTempoOnline() {
-        if (tempoOnlineInvestido >= tempoOnlineEsperado) {
-            return true;
-        } else {
-            return false;
-        }
+        return tempoOnlineInvestido >= tempoOnlineEsperado;
     }
 
     @Override

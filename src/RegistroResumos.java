@@ -1,5 +1,3 @@
-package lab02;
-
 public class RegistroResumos {
     private String[] resumos;
     private int qntResumos;

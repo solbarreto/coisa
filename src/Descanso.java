@@ -1,7 +1,4 @@
-package lab02;
-
 public class Descanso {
-
     private int horasDescanso;
     private int numeroSemanas;
 
