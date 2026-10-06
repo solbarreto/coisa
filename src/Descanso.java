@@ -4,7 +4,6 @@ public class Descanso {
 
     private int horasDescanso;
     private int numeroSemanas;
-    private String statusGeral;
 
     public Descanso() {
 
@@ -29,12 +28,10 @@ public class Descanso {
     public String getStatusGeral() {
         if (numeroSemanas > 0) {
             if (horasDescanso / numeroSemanas >= 26) {
-                String statusGeral = "descansado";
+                return "descansado";
             } else {
-                String statusGeral = "cansado";
+                return "cansado";
             }
-
-            return this.statusGeral;
         }
         return "cansado";
     }

@@ -8,6 +8,7 @@ public class Disciplina {
     private double[] notas;
 
     public Disciplina(String nomeDisciplina) {
+        this.nomeDisciplina = nomeDisciplina;
         this.horas = 0;
         this.notas = new double[]{0, 0, 0, 0};
     }

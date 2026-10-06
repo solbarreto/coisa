@@ -38,9 +38,13 @@ public class RegistroResumos {
     }
 
     public String imprimeResumos() {
-        String saida = "- " + qntResumos + "resumo(s) cadastrado(s)\n- ";
+        String saida = "- " + qntResumos + " resumo(s) cadastrado(s)\n- ";
         for (int i = 0; i < this.temas.length; i++) {
-            saida += this.temas[i] + " | ";
+            if (this.temas[i] == null) {
+                break;
+            } else {
+                saida += this.temas[i] + " | ";
+            }
         }
         return saida;
     }
