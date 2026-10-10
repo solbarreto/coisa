@@ -44,6 +44,7 @@ public class Coisa {
         prog2.cadastraNota(4, 10.0);
         System.out.println(prog2.aprovado());
         System.out.println(prog2.toString());
+
     }
     private static void registrarResumos() {
         RegistroResumos meusResumos = new RegistroResumos(100);  // 100 resumos
