@@ -23,7 +23,8 @@ public class RegistroResumos {
      * de resumos que haverá no registro.
      * O número de resumos irá definir o tamanho do Array de resumos.
      *
-     * @param numeroDeResumos
+     * @param numeroDeResumos Número de resumos: Quantidade limite de resumos,
+     *                        irá definir o tamanho do Array resumos.
      */
     public RegistroResumos(int numeroDeResumos) {
         this.resumos = new Resumo[numeroDeResumos];
@@ -83,7 +84,6 @@ public class RegistroResumos {
 
     /**
      * Retorna a representação textual dos registro de resumos do sistema.
-     *
      * A representação segue o seguinte formato:
      * """
      * - <numeroDeResumos> resumo(s) cadastrado(s) no sistema.

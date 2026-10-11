@@ -32,7 +32,7 @@ public class Disciplina {
      * Constrói um novo objeto dessa classe recebendo como parâmetro
      * o nome da disciplina.
      *
-     * @param nomeDisciplina
+     * @param nomeDisciplina Nome da disciplina: Identificador do objeto
      */
     public Disciplina(String nomeDisciplina) {
         this.nomeDisciplina = nomeDisciplina;
@@ -45,8 +45,8 @@ public class Disciplina {
      * Constrói um novo objeto dessa classe recebendo como parâmeto o
      * nome da disciplina e a quantidade de notas.
      *
-     * @param nomeDisciplina
-     * @param qntNotas
+     * @param nomeDisciplina Nome da disciplina: Identificador do objeto.
+     * @param qntNotas Quantidade de notas e pesos, irá definir os tamanhos dos Arrays.
      */
     public Disciplina(String nomeDisciplina, int qntNotas) {
         this.nomeDisciplina = nomeDisciplina;
@@ -62,9 +62,9 @@ public class Disciplina {
      * Constrói um novo objeto dessa classe recebendo como parâmetro o
      * nome da disciplina, a quantidade de notas e os pesos das notas.
      *
-     * @param nomeDisciplina
-     * @param qntNotas
-     * @param pesos
+     * @param nomeDisciplina Nome da disciplina: Identificador do objeto.
+     * @param qntNotas Quantidade de notas, irá definir o tamanho do Array.
+     * @param pesos Array de pesos, servirá para realizar a média ponderada das notas.
      */
     public Disciplina(String nomeDisciplina, int qntNotas, int[] pesos) {
         this.nomeDisciplina = nomeDisciplina;
@@ -101,7 +101,7 @@ public class Disciplina {
     public double calculaMedia() {
         double media = 0;
         for (int i = 0; i < this.notas.length; i++) {
-            media += this.notas[i] / this.pesos[i];
+            media += this.notas[i] * this.pesos[i];
         }
 
         int total = 0;
