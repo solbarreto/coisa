@@ -1,3 +1,10 @@
+import java.util.Arrays;
+
+/**
+ * Laboratório de Programação 2 - Lab 2
+ *
+ * @author Sonaly Barreto Silva - 20260013465
+ */
 public class Coisa {
     public static void main(String[] args) {
         registrarDescanso();
@@ -44,7 +51,6 @@ public class Coisa {
         prog2.cadastraNota(4, 10.0);
         System.out.println(prog2.aprovado());
         System.out.println(prog2.toString());
-
     }
     private static void registrarResumos() {
         RegistroResumos meusResumos = new RegistroResumos(100);  // 100 resumos
@@ -59,7 +65,6 @@ public class Coisa {
         }
 
         System.out.println();
-        System.out.println("Resumos: ");
         System.out.println(meusResumos.imprimeResumos());
         System.out.println(meusResumos.temResumo("Classes"));
         System.out.println(meusResumos.temResumo("Objetos"));

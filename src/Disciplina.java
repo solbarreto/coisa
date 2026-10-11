@@ -7,15 +7,25 @@ import java.util.Arrays;
  */
 public class Disciplina {
     /**
-     * O nome da disciplina é o dentificador principal de um
+     * O nome da disciplina é o identificador principal de um
      * objeto dessa classe.
      */
     private String nomeDisciplina;
     /**
      * Acumulador da quantidade de horas de estudo.
+     * Sempre será inicializado como nulo (0).
      */
     private int horasDeEstudo;
+    /**
+     * Notas da disciplina. Caso não seja informada a quantidade de notas no
+     * construtor o Array será inicilizado, por padrão, com tamanho = 4.
+     */
     private double[] notas;
+    /**
+     * Pesos das notas. Caso não seja informado no construtor será
+     * inicializado, por padrão, com o tamanho do Array notas
+     * e com peso 1 em cada indice.
+     */
     private int[] pesos;
 
     /**
@@ -49,6 +59,8 @@ public class Disciplina {
     }
 
     /**
+     * Constrói um novo objeto dessa classe recebendo como parâmetro o
+     * nome da disciplina, a quantidade de notas e os pesos das notas.
      *
      * @param nomeDisciplina
      * @param qntNotas
@@ -64,7 +76,7 @@ public class Disciplina {
     /**
      * Adiciona ao acumulador de horas de estudo o novo registro de horas.
      *
-     * @param horas
+     * @param horas novas horas de estudo que vão ser incrementadas no acumulador.
      */
     public void cadastraHoras(int horas) {
         this.horasDeEstudo += horas;
@@ -86,7 +98,7 @@ public class Disciplina {
      *
      * @return média do estudante na disciplina em double.
      */
-    private double calculaMedia() {
+    public double calculaMedia() {
         double media = 0;
         for (int i = 0; i < this.notas.length; i++) {
             media += this.notas[i] / this.pesos[i];

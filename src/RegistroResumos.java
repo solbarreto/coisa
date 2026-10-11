@@ -112,6 +112,11 @@ public class RegistroResumos {
         return saida.toString();
     }
 
+    /**
+     * Retorna a quantidade de resumos registrados.
+     *
+     * @return qntResumos
+     */
     public int conta() {
         return this.qntResumos;
     }
